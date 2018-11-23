@@ -6,12 +6,33 @@ package com.myspace.testproject;
 
 public class Message implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public Message() {
-    }
+	private java.lang.String message;
+	private int status;
 
+	public Message() {
+	}
 
+	public java.lang.String getMessage() {
+		return this.message;
+	}
 
+	public void setMessage(java.lang.String message) {
+		this.message = message;
+	}
+
+	public int getStatus() {
+		return this.status;
+	}
+
+	public void setStatus(int status) {
+		this.status = status;
+	}
+
+	public Message(java.lang.String message, int status) {
+		this.message = message;
+		this.status = status;
+	}
 
 }
