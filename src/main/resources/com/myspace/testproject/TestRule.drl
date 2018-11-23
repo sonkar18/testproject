@@ -1,6 +1,6 @@
 package com.myspace.testproject;
 
-rule "Hello World"
+rule "Hello World Sushma"
     when
         m : Message( status == Message.HELLO, myMessage : message )
     then
